@@ -26,9 +26,35 @@ console.log("\nSet con 'libro3' borrado: ")
 console.log(mySet);
 
 // 7. Crea un mapa que asocie el número del mes a su nombre
+let myMap = new Map([
+    ["1", "enero"],
+    ["2", "febrero"],
+    ["3", "marzo"],
+    ["4", "abril"],
+    ["5", "mayo"],
+    ["6", "junio"],
+    ["7", "julio"],
+    ["8", "agosto"],
+    ["9", "septiembre"],
+    ["10", "octubre"],
+    ["11", "noviembre"],
+    ["12", "diciembre"]
+]);
 
 // 8. Comprueba si el mes número 5 existe en el map e imprime su valor
+if(myMap.has("5")){
+    console.log(myMap.get("5"));
+}
 
 // 9. Añade al mapa una clave con un array que almacene los meses de verano
+myMap.set("verano",["junio","julio","agosto"])
+console.log(myMap)
 
 // 10. Crea un Array, transfórmalo a un Set y almacénalo en un Map
+let myArray2 = ["elemento1","elemento2","elemento3"]
+let mySet2 = new Set(myArray2)
+let myMap2 = ([
+    ["elementos",mySet2]
+])
+console.log("Map")
+console.log(myMap2)
